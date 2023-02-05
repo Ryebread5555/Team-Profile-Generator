@@ -1,3 +1,4 @@
+const generateHTML = require('./src/generateHTML');
 // link to the team profiles
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
@@ -186,7 +187,28 @@ return inquirer.prompt ([
 
 };
 
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Your profile is ready to go! Check index.html to see how it looks!")
+        };
+    })
+};
+
 
 
 // call
 addManager()
+    .then(addEmployee)
+    .then(teamArray => {
+        return generateHTML(teamArray);
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+    .catch(err => {
+        console.log(err);
+});
