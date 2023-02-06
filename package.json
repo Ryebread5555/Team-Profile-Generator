@@ -12,6 +12,7 @@
     "ansi-styles": "^4.3.0",
     "base64-js": "^1.5.1",
     "bl": "^4.1.0",
+    "bootstrap-icons": "^1.10.3",
     "buffer": "^5.7.1",
     "chalk": "^4.1.2",
     "chardet": "^0.7.0",
@@ -58,10 +59,11 @@
     "type-fest": "^0.21.3",
     "util-deprecate": "^1.0.2",
     "wcwidth": "^1.0.1",
-    "wrap-ansi": "^7.0.0"
+    "wrap-ansi": "^7.0.0",
+    "jest": "^27.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -74,4 +76,5 @@
     "url": "https://github.com/Ryebread5555/Team-Profile-Generator/issues"
   },
   "homepage": "https://github.com/Ryebread5555/Team-Profile-Generator#readme"
+  
 }
