@@ -4,7 +4,7 @@ const generateManager = manager => {
     <div class="card employee-card">
     <div class="card-header bg-success text-white">
         <h2 class="card-title">${manager.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
+        <h3 class="card-title"><i class="fas fa-coffee"></i>${manager.getRole()}</h3>
         </div>
     <div class="card-body">
         <ul class="list-group">
@@ -23,7 +23,7 @@ const generateEngineer = engineer => {
     <div class="card employee-card">
     <div class="card-header bg-success text-white">
         <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
+        <h3 class="card-title"><i class="fas fa-glasses"></i>${engineer.getRole()}</h3>
         </div>
     <div class="card-body">
         <ul class="list-group">
@@ -42,7 +42,7 @@ const generateIntern = intern => {
     <div class="card employee-card">
     <div class="card-header bg-success text-white">
         <h2 class="card-title">${intern.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
+        <h3 class="card-title"><i class="fas fa-laptop"></i>${intern.getRole()}</h3>
         </div>
     <div class="card-body">
         <ul class="list-group">
@@ -96,12 +96,14 @@ const generateTeamPage = employeeCards => {
     <html lang="en">
 
     <head>
-        <meta charset="UTF-8>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Team Profile</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        <link rel="stylesheet" href="style.css />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/bi-line-pro@1.0.0/css/bi-line-pro.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css"/>
     </head>
     
     <body>
@@ -120,7 +122,7 @@ const generateTeamPage = employeeCards => {
             </div>
         </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </body>
 </html>
 `;
