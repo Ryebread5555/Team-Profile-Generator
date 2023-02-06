@@ -83,7 +83,7 @@ generateHTML = (data) => {
         };
     }
 
-    const employeeCards = pageArray.joint('')
+    const employeeCards = pageArray.join('')
 
     const generateTeam = generateTeamPage(employeeCards);
     return generateTeam;
@@ -116,7 +116,7 @@ const generateTeamPage = employeeCards => {
     <div class="container">
         <div class="row">
             <div class="row team-area col-12 d-flex justify-conter-center">
-                ${employeeCards(team)}
+                ${employeeCards}
             </div>
         </div>
     </div>
@@ -125,3 +125,5 @@ const generateTeamPage = employeeCards => {
 </html>
 `;
 };
+
+module.exports = generateHTML;
