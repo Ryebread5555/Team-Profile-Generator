@@ -14,6 +14,6 @@ test("GitHub has been retrieved", () => {
 
 test("role call.", () => {
     const returnValue = "Engineer";
-    const employeeHere = new Engineer("Ryan", 5, "ryan@gmail.com", testGithub);
+    const employeeHere = new Engineer("Ryan", 5, "ryan@gmail.com", "Ryebread5555");
     expect(employeeHere.getRole()).toBe(returnValue);
 });
