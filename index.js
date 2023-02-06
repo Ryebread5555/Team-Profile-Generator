@@ -27,11 +27,12 @@ const addManager = () => {
             }
         },
         {
+
             type: 'input',
             message: "Enter the manager's ID number.",
             name: 'id',
             validate: nameInput => {
-                if (isNaN(nameInput)) {
+                if (!isNaN(nameInput)) {
                     return true;
                 } else {
                     console.log("No ID has been detected!");
@@ -58,7 +59,7 @@ const addManager = () => {
             message: "Enter the manager's office number.",
             name: 'officeNumber',
             validate: nameInput => {
-                if (isNaN(nameInput)) {
+                if (!isNaN(nameInput)) {
                     return true;
                 } else {
                     console.log("No office number has been detected!");
@@ -108,7 +109,7 @@ return inquirer.prompt ([
         message: "Enter the ID of the employee.",
         name: 'id',
         validate: nameInput => {
-            if (isNaN(nameInput)) {
+            if (!isNaN(nameInput)) {
                 return true;
             } else {
                 console.log("A ID was not entered, please enter the employee's ID!")
