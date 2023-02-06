@@ -120,7 +120,7 @@ return inquirer.prompt ([
     {
         type: 'input',
         message: "Enter the email of the employee.",
-        name: 'name',
+        name: 'email',
         validate: email => {
             valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
             if (valid) {
@@ -174,8 +174,10 @@ return inquirer.prompt ([
 
     if (role === "Engineer") {
         employee = new Engineer (name, id, email, github);
+        console.log(employee);
     } else if (role === "Intern") {
         employee = new Intern (name, id, email, school);
+        console.log(employee);
     };
     teamArray.push(employee);
     if (confirmEmployee) {
