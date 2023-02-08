@@ -6,7 +6,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 ## Module 10 Challenge Feb 9th, 2023
 
 * Deployed:
-* GitHub:
+* GitHub: https://github.com/Ryebread5555/Team-Profile-Generator
 
 ## Acceptance Criteria
 ```
@@ -37,3 +37,4 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Video
 
+https://user-images.githubusercontent.com/115953057/217418564-f1848c9a-009d-440a-badf-df48181edbcc.mp4
