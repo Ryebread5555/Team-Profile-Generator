@@ -39,6 +39,7 @@ const generateEngineer = engineer => {
 // intern card
 const generateIntern = intern => {
     return `
+    
     <div class="card employee-card">
     <div class="card-header bg-success text-white">
         <h2 class="card-title">${intern.getName()}</h2>
@@ -117,7 +118,7 @@ const generateTeamPage = employeeCards => {
     
     <div class="container">
         <div class="row">
-            <div class="row team-area col-12 d-flex justify-conter-center">
+            <div class="row team-area col-12 d-flex text-center justify-conter-center">
                 ${employeeCards}
             </div>
         </div>
