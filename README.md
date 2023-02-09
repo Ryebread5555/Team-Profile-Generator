@@ -11,7 +11,6 @@
 * [Licenses](#license)
 * [Questions](#questions)
 * [Credits](#credits)
-=======
 
 ## Description
 - Team Profile Generator allows you to create a organized team consiting of a manager, engineers, and interns.
